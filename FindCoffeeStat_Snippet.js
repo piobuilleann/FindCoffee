@@ -79,11 +79,11 @@ router.get('/get/coffee', function(req, res, next) {
 	 *		We'll  do this linearly
 	 *
 	 *		300x450 = 135,000
-	 *		1920 x 1080 = 207,360
+	 *		1920 x 1080 = 2,073,600
 	 *
 	 *
 	 *		100,000 (y)  =>   5 locations (x) (coffee shops)
-	 *		200,000 (y)  =>   18 locations (x)
+	 *		2,000,000 (y)  =>   18 locations (x)
 	 *
 	 *		m = 100,000 / 13
 	 *
