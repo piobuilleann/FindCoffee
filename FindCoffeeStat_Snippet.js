@@ -85,11 +85,11 @@ router.get('/get/coffee', function(req, res, next) {
 	 *		100,000 (y)  =>   5 locations (x) (coffee shops)
 	 *		2,000,000 (y)  =>   18 locations (x)
 	 *
-	 *		m = 100,000 / 13
+	 *		m = 1,900,000 / 13
 	 *
-	 *		x = ( (y-61,538.47) / ( 100,000/13) )
+	 *		x = ( (y+630769.23) / ( 1,900,000/13) )
 	 */
-	var limitingShopsOnResolution = ( (( usrScreenResHeight * usrScreenResWidth )-61,538.47) / ( 100,000/13) );
+	var limitingShopsOnResolution = ( (( usrScreenResHeight * usrScreenResWidth )+630769.23) / ( 1900000/13) );
 	//Where X is a configurable number determined by the screen size of your phone
 	coffeshops = coffeshops.slice(0, Math.round(limitingShopsOnResolution) );
 
